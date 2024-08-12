@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_main.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema de Inventarios y Ventas"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Lista de Productos -->
+    <ListView
+        android:id="@+id/lv_products"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="1dp"/>
+
+    <!-- Botones para Agregar Producto, Realizar Venta y Ver Inventario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_add_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Producto"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btn_make_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Realizar Venta"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btn_view_inventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver Inventario"/>
+
+    </LinearLayout>
+</LinearLayout>
